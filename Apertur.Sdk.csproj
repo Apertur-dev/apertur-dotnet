@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>Apertur.Sdk</RootNamespace>
+    <PackageId>Apertur.Sdk</PackageId>
+    <Version>0.1.6</Version>
+    <Description>C# SDK for the Apertur API</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Examples are standalone projects; never compile them into the SDK assembly/package. -->
+    <Compile Remove="examples/**/*.cs" />
+  </ItemGroup>
+</Project>
